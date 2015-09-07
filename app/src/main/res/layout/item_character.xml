@@ -1,44 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/spacing">
+    android:orientation="horizontal">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_thumb"
-        android:layout_width="@dimen/image_thumb"
-        android:layout_height="@dimen/image_thumb" />
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="16dp" />
 
-    <TextView
-        android:id="@+id/txt_name"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/spacing"
-        android:layout_toLeftOf="@+id/check_box"
-        android:layout_toRightOf="@id/img_thumb"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_large" />
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txt_phrase"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt_name"
-        android:layout_marginLeft="@dimen/spacing"
-        android:layout_marginTop="@dimen/spacing_small"
-        android:layout_toLeftOf="@+id/check_box"
-        android:layout_toRightOf="@id/img_thumb"
-        android:ellipsize="end"
-        android:maxLines="2"
-        android:textColor="@color/grey600"
-        android:textSize="@dimen/text_small" />
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_phrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#757575"
+            android:textSize="12sp" />
+    </LinearLayout>
 
     <CheckBox
         android:id="@+id/check_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/spacing" />
+        android:layout_gravity="center_vertical"
+        android:layout_margin="16dp" />
 
-</RelativeLayout>
+</LinearLayout>

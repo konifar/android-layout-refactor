@@ -5,7 +5,6 @@
     <!-- Theme & Accent -->
     <color name="theme50">#E0F7FA</color>
     <color name="theme500">#00BCD4</color>
-    <color name="theme500_alpha12">#1F00BCD4</color>
     <color name="theme600">#00BCD4</color>
     <color name="accent100">#FFFF8D</color>
 
@@ -15,6 +14,5 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="black_alpha_12">#1F000000</color>
-    <color name="black_alpha_30">#4D000000</color>
 
 </resources>
